@@ -3,11 +3,132 @@ Learning and Practicing  HTML
 html course overview and contents
 
 
-*Chapter 1 - Getting Started
-....> what is html?
-....> environment setup 
-....> boiler code
-....> create first web page
-....> to check error > validator.w3.org
-....> tags
-....> attributes
+
+ *Chapter 1 - Getting Started
+...> what is html?
+...> environment setup 
+...> boiler code
+...> create first web page
+...> to check error > validator.w3.org
+...> tags
+...> attributes
+
+ *Chapter 2 - Head Element
+...> all about head elements
+...> meta tags 
+...> link tags
+...> style tag
+
+ *Chapter 3 - Text Basics 
+...> headings tags 
+...> paragraph tag
+...> horizontal row hr tag
+...> line break br tag 
+...> spaces are ignored 
+...> nested tags 
+...> inline elements 
+...> block level elemets
+...> emphasis em tag
+...> strong tag
+...> entities &nbsp; &lt; &copy; &gt;
+...> abrivation tag abbr
+...> title attributes 
+...> address tag
+...> html comment <!-- -->
+ 
+
+ *Chapter 4 - List Types
+...> ordered list tag ol
+...> list item tag li
+...> unodered list tag ul
+...> discription list tag dl 
+...> discription term tag dt
+...> discription detail tag dd
+
+ *Chapter 5 - Add Links 
+...> anchor tag a 
+...> herf attributes
+...> absuloute referance
+...> relative referance
+...> internal refrances
+...> link tags 
+...> section tag
+...> id attributes 
+...> nav tag 
+...> 1. avoid printing the full web address to the page.
+     2. avoid "links to" phrase. We all know it is a link. 
+     3. keep your link text short.Exact topic. Not sentences.
+     4. No links that say "click here". It provides no meaning.
+...> mailto: , download , tel: , target  attributes
+...> href / >> back to home 
+ 
+ *Chapter 6 - Add Images
+...> creating img folder
+...> img tag
+...> src , alt attributes
+...> title attributes 
+...> width , height attributes
+...> layout shift 
+...> loading attribute
+...> lazy loading 
+...> figure tag
+...> figcaption tag
+...> code tag
+...> for sample images 
+      >  placeholder.com
+      >  unsplash.com
+      > pexels.com
+      > fratisography.com
+      > pixaby.com
+...> software to use 
+      > irfanView
+      > canva.com 
+      > tinypng.com 
+
+ *Chapter 7 - Semantic Tags 
+...> nav tag , header tag , main tag, footer tag , section tag, article tag, aside tag, details tag, summary tag, mark tag, time tag , datetime  attribute
+...>  div tag, span tag > less use as you can 
+...> chrome extension > html5 Outliner
+
+ *Chapter 8 - Create Tables 
+...> table tag
+...> table row tag tr
+...> table data tag td
+...>  table header tag th
+...> colspan attributes 
+...> rowspan attributes 
+...> caption tag 
+...> thead tag
+...> tbody tag
+...> tfoot tag 
+...> scope attribute
+...> headers attribute
+
+*Chapter 9 - Forms & Inputs 
+...>form tag
+...> action attribute
+...> method attribute
+...> label tag
+...> for attribute
+...> input tag
+...> type,name ,id attribute
+....> placeholder attribute
+...> autocomplete attribute
+...> required , autofocus attribute
+...> pattren attribute 
+...> name , min, max , step, value attribute
+...> select tag 
+...> option tag
+...> selected attribute
+...> optgroup tag
+...> multiple , size attribute 
+...> fieldset tag
+...> legend tag
+...> type=radio , cheakbox  , submit , reset  
+...> textarea tag
+...> rows attribute
+...> button tag 
+...> formaction attribute 
+...> formmethod attribute 
+...> get , post value 
+
