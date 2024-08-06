@@ -1,1 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>what is doctype declaration - mdn </h1>
+    <p>In HTML, the doctype is the required "
+        <!-- <!DOCTYPE html> -->
+        " preamble found at the top of all documents. Its sole purpose is to prevent a browser from
+        switching into so-called "quirks mode" when rendering a document; that is, the "
+        <!-- <!DOCTYPE html> -->
+        " doctype ensures that the browser makes a best-effort attempt at following the relevant
+        specifications, rather than using a different rendering mode that is incompatible with some specifications.
+    </p>
+    <h1>what is doctype - chatgpt</h1>
+    <p>DOCTYPE (Document Type Declaration) HTML mein aik declaration hoti hai jo web browser ko batati hai ke document
+        kaunsi HTML version ko follow karta hai. Yeh document ke shuru mein likhi jati hai aur iski basic syntax kuch is
+        tarah hoti hai:
+
+        html
+        Copy code
+        <!-- <!DOCTYPE html> -->
+        Yeh declaration HTML5 ke liye hai, jo latest version hai. Is se web browser ko maloom hota hai ke yeh HTML5
+        document hai aur wo isko accordingly render karta hai.
+
+        Pehle versions mein yeh thodi si mukhtalif hoti thi, jaise ke HTML 4.01 ke liye:
+
+        html
+        Copy code
+        <!-- <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> -->
+        Magar ab HTML5 mein sirf ek simple
+        <!-- <!DOCTYPE html> -->
+         hi kafi hota hai.
+    </p>
+    <h1>quirks mode - mdn</h1>
+    <p>In the old days of the web, pages were typically written in two versions: One for Netscape Navigator, and one for
+        Microsoft Internet Explorer. When the web standards were made at W3C, browsers could not just start using them,
+        as doing so would break most existing sites on the web. Browsers therefore introduced two modes to treat new
+        standards compliant sites differently from old legacy sites.
+
+        There are now three modes used by the layout engines in web browsers: quirks mode, limited-quirks mode, and
+        no-quirks mode. In quirks mode, layout emulates behavior in Navigator 4 and Internet Explorer 5. This is
+        essential in order to support websites that were built before the widespread adoption of web standards. In
+        no-quirks mode, the behavior is (hopefully) the desired behavior described by the modern HTML and CSS
+        specifications. In limited-quirks mode, there are only a very small number of quirks implemented.
+
+        The limited-quirks and no-quirks modes used to be called "almost-standards" mode and "full standards" mode,
+        respectively. These names have been changed as the behavior is now standardized.
+    </p>
+    <h1>doctype x quirks mode - chatgpt</h1>
+    <p>DOCTYPE declaration ka bohat close link hai quirks mode se. Quirks mode tab activate hota hai jab DOCTYPE
+        declaration missing ho ya galat ho.
+
+        Quirks Mode:
+        Quirks mode tab hota hai jab browser ko pata nahi hota ke document kis standard ko follow kar raha hai. Is mode
+        mein, browser purane, pre-standards web pages ko compatibility ke liye render karta hai. Yeh mode purane
+        browsers ke non-standard behavior ko emulate karta hai.
+
+        Standard Mode (ya Strict Mode):
+        Jab correct DOCTYPE declaration di jati hai, browser standard mode mein document ko render karta hai. Is mode
+        mein, browser latest web standards ko follow karta hai.
+
+        DOCTYPE aur Quirks Mode ka Link:
+        Correct DOCTYPE: Agar correct aur proper DOCTYPE provide kiya gaya ho, to browser standard mode ko activate
+        karta hai. Jaise:
+
+        html
+        Copy code
+        <!-- <!DOCTYPE html> -->
+        Incorrect ya Missing DOCTYPE: Agar DOCTYPE declaration galat ya missing ho, to browser quirks mode ko activate
+        karta hai. Jaise agar DOCTYPE declaration bilkul na ho:
+
+        html
+        Copy code
+        <!-- No DOCTYPE declaration -->
+        <!-- <html> -->
+        ...
+        Ya agar galat DOCTYPE declaration di gayi ho:
+
+        html
+        Copy code
+        <!-- <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN"> -->
+        In dono soorat mein browser quirks mode mein chala jata hai aur document ko render karte waqt purane
+        non-standard behavior ko follow karta hai.
+
+        To is liye, hamesha sahi aur correct DOCTYPE declaration ko use karna chahiye taake browser standard mode mein
+        document ko render kar sake aur aapka web page har browser mein consistent tarike se show ho.
+    </p>
+    <h1>How do browsers determine which mode to use? - mdn</h1>
+    <p>For HTML documents, browsers use a DOCTYPE in the beginning of the document to decide whether to handle it in
+        quirks mode or standards mode. To ensure that your page uses full standards mode, make sure that your page has a
+        DOCTYPE like in this example:
+
+        html
+        Copy to Clipboard
+        <!-- <!doctype html>
+        <html lang="en">
+
+        <head>
+            <meta charset="UTF-8" />
+            <title>Hello World!</title>
+        </head>
+
+        <body></body>
+
+        </html> -->
+        The DOCTYPE shown in the example,
+        <!-- <!DOCTYPE html> -->
+        , is the simplest possible, and the one recommended by current HTML standards. Earlier versions
+        of the HTML standard recommended other variants, but all existing browsers today will use full standards mode
+        for this DOCTYPE. There are no valid reasons to use a more complicated DOCTYPE. If you do use another DOCTYPE,
+        you may risk choosing one which triggers almost standards mode or quirks mode.
+
+        Put the DOCTYPE right at the beginning of your HTML document, before any other content.
+
+        The only purpose of
+        <!-- <!DOCTYPE html> -->
+         is to activate no-quirks mode. Older versions of HTML standard DOCTYPEs provided additional
+        meaning, but no browser ever used the DOCTYPE for anything other than switching between render modes.
+
+        See also a detailed description of when different browsers choose various modes.
+    </p>
+    <h1>How do I see which mode is used?</h1>
+    <p> If the page is rendered in quirks or limited-quirks mode, Firefox will log a warning to the console tab in the
+        developer tools. If this warning is not shown, Firefox is using no-quirks mode.
+
+        The value of document.compatMode in JavaScript will show whether or not the document is in quirks mode. If its
+        value is "BackCompat", the document is in quirks mode. If it isn't, it will have value "CSS1Compat".</p>
+
+    <h1>conslusion - Chatgpt </h1>
+    <p>Quirks Mode:
+        Quirks mode woh halat hai jab web browser purane web pages ko theek se dikhane ke liye kuch purane aur standard
+        ke khilaaf tareeqe istemal karta hai. Yeh un pages ke liye hota hai jo 1990s aur early 2000s mein banaye gaye
+        the, jab web standards utne strict nahi the.
+
+        Kyun Zaroori hai:
+        Jab HTML standard bana, purane browsers ka apna tarika tha pages ko dikhane ka. Jab naye standards aaye, purane
+        pages ko theek se dikhane ke liye quirks mode introduce kiya gaya taake purane pages bhi sahi nazar aayen aur
+        naye standards bhi follow kiye ja saken.
+
+        Kaise Activate Hota hai:
+        Quirks mode tab activate hota hai jab:
+
+        DOCTYPE Declaration Missing ho: Agar aap HTML document mein DOCTYPE nahi dete, to browser quirks mode mein chala
+        jata hai.
+
+        html
+        Copy code
+        <!-- No DOCTYPE declaration -->
+        <!-- <html> -->
+        ...
+        Incorrect DOCTYPE: Agar aap galat ya incomplete DOCTYPE declaration dete hain.
+
+        Asar:
+        Quirks mode mein browser kuch different aur purane tareeqon se page ko render karta hai. Yeh kuch ajeeb (quirky)
+        behaviors show kar sakta hai jaise:
+
+        Box model different hota hai (padding aur border ka size calculations mein farq hota hai).
+        CSS aur HTML ke kuch rules ko differently treat karta hai.
+        Standard Mode:
+        Jab sahi DOCTYPE diya jata hai, to browser standard mode mein chala jata hai, jahan woh latest web standards ko
+        follow karta hai.
+
+        Example:
+        Agar aap chahte hain ke browser standard mode mein chalay, to yeh DOCTYPE use karain:
+
+        html
+        Copy code
+        <!-- <!DOCTYPE html>
+        <html>
+
+        <head>
+            <title>Standard Mode Example</title>
+        </head>
+
+        <body>
+            <p>Yeh page standard mode mein render ho raha hai.</p>
+        </body>
+
+        </html> -->
+        Aur agar DOCTYPE nahi dete:
+
+        html
+        Copy code
+        <!-- <html>
+
+        <head>
+            <title>Quirks Mode Example</title>
+        </head>
+
+        <body>
+            <p>Yeh page quirks mode mein render ho raha hai.</p>
+        </body>
+
+        </html> -->
+        Is example mein, pehla page standard mode mein render hoga aur doosra quirks mode mein, kyunki doosre mein
+        DOCTYPE missing hai.
+
+    </p>
+</body>
+
+</html>
