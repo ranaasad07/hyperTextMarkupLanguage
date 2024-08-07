@@ -1,1 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 2</title>
+</head>
+
+<body>
+    <h1> what is html tag - mdn</h1>
+    <p>
+        <!-- <html> -->
+        : The HTML Document / Root element
+        The
+        <!-- <html> -->
+        HTML element represents the root (top-level element) of an HTML document, so it is also referred to as the root
+        element. All other elements must be descendants of this element. There can be only one
+        <!-- <html>  -->
+        element in a document.
+    </p>
+    <h1>html tag - chatgpt</h1>
+    <p>
+        <!-- <html>  -->
+        tag HTML document ka root element hai aur saari HTML content iske andar hoti hai. Yeh tag browser ko batata hai
+        ke document ka start aur end kahan hai. Chaliye,
+        <!-- <html> -->
+        tag ke kuch key aspects ko detail mein dekhte hain:
+    </p>
+    <p>Structure of
+        <!-- <html>  -->
+        Tag
+        HTML document ka basic structure kuch is tarah hota hai:
+
+        <!-- html
+        Copy code
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+        </head>
+        <body>
+            <h1>Hello, World!</h1>
+            <p>This is a paragraph.</p>
+        </body>
+        </html>
+        Is example mein, <html> tag ne saari document ko wrap kiya hua hai.</p> -->
+        <!-- <h1>attributes of html  tag </h1> -->
+        <h1>Attributes of html Tag</h1>
+        lang Attribute:
+
+        lang attribute document ki primary language ko specify karta hai.
+        Example:
+        <!-- <html lang="en"> (English), <html lang="ur"> (Urdu). -->
+        Global Attributes:
+
+        class, id, style, title, etc. are global attributes that can be used with most HTML elements, including hmtl
+        tag.
+        <!-- <html>. -->
+        Example:
+        <!-- <html id="main-html" class="container">.</p>  -->
+         <h1>html tag attributes- chatgpt</h1>
+         <!-- <p>Attributes of <html> Tag
+            lang Attribute:
+            
+            lang ka matlab language hai. Yeh attribute document ki language set karta hai.
+            Example:
+            html
+            Copy code
+            <html lang="en">  English language -->
+          <!--   <html lang="ur"> Urdu language -->
+           <!-- Global Attributes:
+            
+            class:
+            
+            Class attribute elements ko style karne ke liye ya unko group karne ke liye use hota hai.
+            Example:
+            html
+            Copy code
+            <html class="my-html-class">
+            id:
+            
+            ID attribute ek unique identifier hota hai jo kisi bhi HTML element ko identify karne ke liye use hota hai.
+            Example:
+            html
+            Copy code
+            <html id="main-html">
+            style:
+            
+            Style attribute inline CSS ko apply karne ke liye use hota hai.
+            Example:
+            html
+            Copy code
+            <html style="background-color: lightblue;">
+            title:
+            
+            Title attribute additional information provide karne ke liye use hota hai jo hover karne par show hoti hai.
+            Example:
+            html
+            Copy code
+            <html title="This is the main HTML element">
+            Example Using Attributes
+            html
+            Copy code
+            <!DOCTYPE html>
+            <html lang="en" class="container" id="main-html" style="background-color: lightblue;" title="This is the root element">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Example</title>
+            </head>
+            <body>
+                <h1>Hello, World!</h1>
+            </body>
+            </html>
+            Is example mein:
+            
+            lang="en": Document ki language English set karta hai.
+            class="container": HTML element ko "container" class assign karta hai.
+            id="main-html": HTML element ko ek unique ID "main-html" deta hai.
+            style="background-color: lightblue;": HTML element ka background color light blue set karta hai.
+            title="This is the root element": Additional information provide karta hai jo hover karne par show hoti hai.
+            Yeh sab attributes HTML element ko specific functionalities aur styling dene ke liye use hote hain. Agar aapko kisi specific attribute ke bare mein aur detail chahiye, to zaroor batayein!
+            
+            
+            hum or kon kon sy attributes astamal kar sakty ha <html> ma
+            ChatGPT
+            <html> tag mein commonly use hone wale attributes ke ilawa kuch aur attributes bhi hain jo aap use kar sakte hain. Yeh saare attributes HTML document ko customize karne aur uski functionalities ko enhance karne ke liye use hote hain. Yahan kuch aur attributes hain jo aap <html> tag mein use kar sakte hain:
+            
+            Commonly Used Attributes
+            lang:
+            
+            Document ki language specify karta hai.
+            Example:
+            html
+            Copy code
+            <html lang="en">
+            class:
+            
+            CSS classes assign karta hai jo styling ke liye use hoti hain.
+            Example:
+            html
+            Copy code
+            <html class="container">
+            id:
+            
+            Unique identifier deta hai.
+            Example:
+            html
+            Copy code
+            <html id="main-html">
+            style:
+            
+            Inline CSS apply karta hai.
+            Example:
+            html
+            Copy code
+            <html style="background-color: lightblue;">
+            title:
+            
+            Additional information provide karta hai jo hover karne par show hoti hai.
+            Example:
+            html
+            Copy code
+            <html title="This is the root element">
+            Less Commonly Used Attributes
+            dir:
+            
+            Text direction specify karta hai (LTR for left-to-right, RTL for right-to-left).
+            Example:
+            html
+            Copy code
+            <html dir="ltr">  Left to Right 
+            <html dir="rtl">  Right to Left -->
+         <!--  manifest:
+            
+            Offline web applications ke liye application cache manifest file specify karta hai.
+            Example:
+            html
+            Copy code
+            <html manifest="example.appcache">
+            xmlns (XML namespace):
+            
+            Namespace specify karta hai jab aap XML documents ke saath kaam kar rahe hote hain.
+            Example:
+            html
+            Copy code
+            <html xmlns="http://www.w3.org/1999/xhtml">
+            Example with Additional Attributes
+            html
+            Copy code
+            <!DOCTYPE html>
+            <html lang="en" class="container" id="main-html" style="background-color: lightblue;" title="This is the root element" dir="ltr" manifest="example.appcache" xmlns="http://www.w3.org/1999/xhtml">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Example</title>
+            </head>
+            <body>
+                <h1>Hello, World!</h1>
+            </body>
+            </html>
+            Is example mein:
+            
+            dir="ltr": Text direction left-to-right set karta hai.
+            manifest="example.appcache": Application cache manifest file specify karta hai.
+            xmlns="http://www.w3.org/1999/xhtml": Namespace specify karta hai.
+            Agar aapko kisi aur specific attribute ke bare mein detail chahiye ya kisi particular attribute ka istemal samajhna hai, to zaroor batayein!
+            
+            
+            
+            
+            
+            
+            </p> -->
+            <p>
+                Is example mein:
+
+lang="en": Document ki language English set karta hai.
+class="container": HTML element ko "container" class assign karta hai.
+id="main-html": HTML element ko ek unique ID "main-html" deta hai.
+style="background-color: lightblue;": HTML element ka background color light blue set karta hai.
+title="This is the root element": Additional information provide karta hai jo hover karne par show hoti hai.
+                dir="ltr": Text direction left-to-right set karta hai.
+                manifest="example.appcache": Application cache manifest file specify karta hai.
+                xmlns="http://www.w3.org/1999/xhtml": Namespace specify karta hai.</p>
+
+    <h1>importance of html tag</h1>
+    <p>Importance of
+
+        <!-- <html> Tag -->
+        Semantic Structure:
+        <!-- <html>  -->
+        tag document ko ek structured format mein organize karta hai, jo browsers aur search
+        engines ke liye readable hota hai.
+        Validation: Properly nested
+        <!-- <html>  -->
+        tag aur uske andar ke elements document ko valid banate hain aur ensure karte
+        hain ke woh different browsers mein sahi tarah se render ho.
+        Internationalization: lang attribute use karke aap apni website ko multiple languages ke liye optimize kar sakte
+        hain, jo ke user experience ko improve karta hai.
+    </p>
+
+</body>
+
+
+</html>
