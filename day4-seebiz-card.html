@@ -1,1 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1,
+        h2,
+        .imglogo {
+            text-align: center;
+        }
+
+        .form-group {
+            /* padding-left: 27%; */
+            text-align: center;
+        }
+
+        .form-group button:hover {
+            background-color: rgb(204, 204, 204);
+            border-radius: 8px;
+
+
+        }
+
+        #name,
+        #program,
+        #batchid,
+        #validity {
+            border-style: none;
+            border-bottom-style: dotted;
+        }
+
+        .bd {
+            border: 3px solid black;
+            background-color: rgb(250, 250, 250);
+            min-height: 96vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bd">
+        <div class="imglogo"><img src="seebizlogo.png" alt="img load error"></div>
+        <h2>TRAINING PROGRAM</h2>
+        <h1><b>TRAINEE</b></h1>
+        <form action="">
+            <div class="container">
+                <div class="form-group"><label for="name">Name :</label>
+                    <input type="text" placeholder="Enter your name " id="name" class="">
+                </div><br>
+                <div class="form-group"><label for="program">Program:</label>
+                    <input type="text" placeholder="Enter your program name" id="program" class="">
+                </div><br>
+                <div class="form-group"><label for="batchid">Batch Id:</label>
+                    <input type="text" placeholder="Enter batch id " id="batchid" class="">
+                </div><br>
+                <div class="form-group"><label for="validity">Validity:</label>
+                    <input type="text" placeholder="Enter validity of program" id="validity" class="">
+                </div><br>
+
+                <div class="form-group"><button type="submit">submit</button></div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
