@@ -1,1 +1,10 @@
-
+doctype html tag => quirks mode
+html tag 
+head tag
+	title  tag ga       // ga stand for global attribituse and ea stand for event attributes 
+	style  tag ga ea | media type   // these are the attribitues
+	link   tag ga ea | media type rel href hreflang .title sizes  referrpolicy .crossorigin
+	script tag ga    | src type async crossorigin defer integrity .nomodule refferpolicy
+	base   tag ga na | href target
+	meta   tag ga    | charset content http-equiv name
+body tag
