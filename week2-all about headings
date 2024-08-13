@@ -1,1 +1,11 @@
-
+in html heading tags start from h1 tag and end at h6 tag 
+h1 is the most important heading 
+h6 is least important heading 
+<h1> This is h1 heading </h1>
+<h2> This is h2 heading </h2>
+<h3> This is h3 heading </h3>
+<h4> This is h4 heading </h4>
+<h5> This is h5 heading </h5>
+<h6> This is h6 heading </h6>
+h1 to h6 shows the heading in html page it is the level of heading with respect to html page 
+these are important for search engine optimization . etc ....
