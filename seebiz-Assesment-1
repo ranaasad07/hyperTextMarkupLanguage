@@ -1,1 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assesment 1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .maincontainer {
+            margin-left: 20%;
+            margin-right: 20%;
+            margin-top: 0px;
+            margin-bottom: 12px;
+        }
+
+        body {
+            background-color: #FFFBEA;
+        }
+
+        .header,
+        .footer {
+            color: white;
+            background: #79A3B1;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .footer {
+            margin-top: 20px;
+        }
+
+        .intro,
+        .frontend,
+        .backend {
+            margin-top: 20px;
+            /* padding-top: 10px; */
+            background: #F8F8F8;
+
+        }
+
+        .backend,
+        .frontend h3,
+        p {
+            margin: 10px;
+        }
+
+
+
+        .heade {
+            color: #C56AAE;
+
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .content {
+            padding-left: 30px;
+            padding-top: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="maincontainer">
+        <div class="header">
+            <h1>Web development</h1>
+        </div>
+        <div class="intro">
+            <P>
+            <div>
+                <h2 class="heade center">Front End</h2>
+                <p class="center">The front end refers to the part of a website that users interact with directly.It
+                    includes everything a user sees on the web page such as button,text,images,forms,and overall
+                    layout.The goal of front-end development is to make the user experience(UX) smooth,efficint,and
+                    visually appealing.</p>
+            </div>
+            <div>
+                <h2 class="heade center">Back End</h2>
+                <p class="center">The back end is the behind-the-scenes functionality that powers the website. It
+                    handles the server-side operations,databases,and application logic that the usre doesn't see.It
+                    ensure that the information entered on the front end is processed and stored properly.The back end
+                    is responsible for responding to requests,processing data,and managing connections to databases and
+                    servers.</p>
+            </div>
+            </P>
+        </div>
+        <div class="frontend">
+            <div>
+                <h2 class="heade">FRONT END</h2>
+            </div>
+            <div class="content">
+                <h3>HTML</h3>
+                <p>HTML is the building block of web pages and it stands for Hyper Text Markup Language.</p>
+                <h3> CSS</h3>
+                <p> stands for Cascading Style Sheet and it's used for styling web pages and making them
+                    beautiful.</p>
+                <h3>JAVASCRIPT</h3>
+                <p>Javascript is a programming language and it's used to give funtionality to web
+                    pages.</p>
+                <h3>Frameworks/Libraries</h3>
+                <p> front-end frameworks and libraries include React,Angular, and
+                    Vue.js,which help organize and streamline the development process.</p>
+
+
+            </div>
+        </div>
+        <div class="backend">
+            <div>
+                <h2 class="heade">BACK END</h2>
+            </div>
+            <div class="content">
+                <h3>Javascript(Node.js)</h3>
+                <p>JavaScript is also used on the back end with Node.js, which allows for server-side scripting.</p>
+                <h3> PHP </h3>
+                <p>Widely used for server-side scripting,espacially in web applications like WordPress.</p>
+                <h3>Java</h3>
+                <p>Popular for larger,enterpriese-level applications that require scalability and strong security.</p>
+                <h3>Python</h3>
+                <p>Known for its simplicity and readability.Python is used in back-end frameworks like Django and Flask.
+                </p>
+                <h3>Databases</h3>
+                <p>Back-end development often involves working with databases like MySQL PostgreSQL MongoDB,etc,to store
+                    and retrieve data.</p>
+            </div>
+        </div>
+        <div class="footer">
+            <p>&copy 2024 SeeBiz All rights reserved.</p>
+        </div>
+
+
+
+    </div>
+</body>
+
+</html>
